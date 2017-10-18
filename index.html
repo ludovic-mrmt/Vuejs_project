@@ -27,12 +27,9 @@
 
   <div class="ui main container" id="app">
 
-    <input type="text" v-model="message">
+    {{persons}}
 
-    <div class="ui success message" v-if="success">
-      <i class="close icon" @click="close"></i>
-      <p> {{ message }} </p>
-    </div>
+    <button type="button" name="button" @click="addPerson">Ajouter une personne</button>
 
 
   </div>

@@ -1,18 +1,17 @@
-new Vue({
+let vm = new Vue({
 
   el: '#app',
 
   data: {
     message: 'Salut',
     link: 'http://www.google.ch',
-    success: true,
+    cls: 'success',
     persons: ['Lud', 'Kelan', 'Matteo'],
   },
 
   methods: {
-    close: function () {
-      this.message = 'Fermé'
-      this.success = false
+    addPerson: function () {
+      this.persons[0] = 'Lud'
     }
   }
 })
